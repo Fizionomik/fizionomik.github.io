@@ -367,9 +367,7 @@ nav > ul > li { list-style: none; }
 
 .tm-carousel {
     padding-top: 40px;
-    padding-bottom: 35px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-bottom: 55px;
 	text-align: center;
 }
 
@@ -585,13 +583,13 @@ figure.effect-honey:hover h4 i {
 /***** Zoe *****/
 /*---------------*/
 
-.grid figure.effect-zoe { background: transparent; }
+.grid figure.effect-zoe { background: normal; }
 
 figure.effect-zoe figcaption {
 	top: auto;
 	bottom: 0;
 	padding: 15px 15px 0;
-	height: 5em;
+	height: 7em;
 	background: rgba(255,255,255,0.7);
 	color: #3c4a50;
 	-webkit-transition: -webkit-transform 0.35s;
