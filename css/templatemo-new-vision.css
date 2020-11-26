@@ -60,12 +60,11 @@ p {
 
 .container-fluid {
     max-width: 1200px;
-    background-color: black;
 }
 .container-fluid2 {
-	margin-right: 360px;
-	margin-left: 100px;
-    max-width: 1200px;
+	margin-right: 100px;
+	margin-left: 190px;
+    max-width: 1170px;
 	height: 1000px;
     background-color: white;
 }
@@ -79,7 +78,7 @@ p {
 
 .tm-site-header { 
 padding-top: 60px;
-background-image: url(1.png);
+background-image: url(2.png);
  }
 
 @media (max-width: 992px) {

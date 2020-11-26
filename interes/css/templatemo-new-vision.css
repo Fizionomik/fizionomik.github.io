@@ -60,7 +60,13 @@ p {
 
 .container-fluid {
     max-width: 1200px;
-    background-color: black;
+}
+.container-fluid2 {
+	margin-right: 100px;
+	margin-left: 190px;
+    max-width: 1170px;
+	height: 1000px;
+    background-color: white;
 }
 
 @media (max-width: 992px) {
@@ -72,7 +78,7 @@ p {
 
 .tm-site-header { 
 padding-top: 60px;
-background-image: url(1.png);
+background-image: url(2.png);
  }
 
 @media (max-width: 992px) {
@@ -147,10 +153,6 @@ nav > ul > li { list-style: none; }
     margin-left: 25px;
     border-bottom: 5px solid transparent;
 }
-.left {
-    margin-left: 25px;
-}
-
 
 @media (min-width: 1080px) {
     .navbar-expand-lg .navbar-nav .nav-link {
