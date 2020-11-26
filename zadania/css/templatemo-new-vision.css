@@ -44,6 +44,9 @@ p {
     color: #666;
     line-height: 1.9;
 }
+.zadania {
+  margin-left: 40px;
+}
 
 .tm-color-primary { color: #09F; }
 

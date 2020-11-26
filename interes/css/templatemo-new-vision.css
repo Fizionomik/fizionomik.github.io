@@ -26,6 +26,9 @@ body {
   background-color: #ddd;
   overflow-x: hidden;
 }
+.zadania {
+  margin-left: 40px;
+}
 
 a { 
     transition: all 0.3s ease; 
