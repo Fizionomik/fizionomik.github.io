@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <link rel="icon" type="img/png" sizes="16x16" href="img/head2.png">
     <title>Математика - Наука!</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -55,7 +55,7 @@
                     <h3><span class="fa-fw open-close"><i class="ti-menu hidden-xs"></i><i class="ti-close visible-xs"></i></span> <span class="hide-menu">Навигация</span></h3> </div>
                 <ul class="nav" id="side-menu">
 					<li> <a href="../index.html" class="waves-effect">&#8855  <span class="hide-menu"> Главная </span></a>
-				    <li> <a href="Contacts.html" class="waves-effect"> &#10084 <span class="hide-menu"> Интересное </span></a>
+				    <li> <a href="interes.html" class="waves-effect"> &#10084 <span class="hide-menu"> Интересное </span></a>
 					
 					
 					
@@ -83,35 +83,49 @@
         <!-- Page Content -->
         <!-- ============================================================== -->
         <div id="page-wrapper">
-             <p>Выполните задания теста:</p>
- <p align="center"><img src="otvet/q2.jpg">.<input type="text" id="z_1"> Запишите ответ полученный в () через запятую</p><br>
- <p align="center"><img src="otvet/q1.jpg">.<input type="text" id="z_2"> Запишите ответ полученный в () через запятую</p><br>
- <p align="center"><img src="otvet/q.jpg">.<input type="text"  id="z_3"> Запишите ответ полученный в () через запятую</p><br>
- <p align="center"><button onClick="proverit();">Проверить</button></p>
- <div id="rezultat"></div>
-<script>
-function proverit(){
-pr_otv_zadachi_1 = −38; 
-pr_otv_zadachi_2 = -6,-5;
-pr_otv_zadachi_3 = -8,4;
-otv_uch_1 = document.getElementById('z_1').value;
-otv_uch_2 = document.getElementById('z_2').value;
-otv_uch_3 = document.getElementById('z_3').value;
-ball = 0;
-if(otv_uch_1 == pr_otv_zadachi_1){
-ball +=1;
-}
-if(otv_uch_2 == pr_otv_zadachi_2){
-ball +=1;
-}
-if(otv_uch_3 == pr_otv_zadachi_3){
-ball +=1;
-}
-vsego_zadach = 3;
-procent_vip = ball/vsego_zadach * 3;
-document.getElementById('rezultat').innerHTML = "Ваша оценка "+procent_vip+".";
-}
-</script>
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h1 class="page-title">Описание проекта</h1>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+                <!-- ============================================================== -->
+                <!-- Different data widgets -->
+                <!-- ============================================================== -->
+                    <!-- /col-md-9 -->
+                    <!-- col-md-3 -->
+                    <div class="col-md-4 col-lg-9">
+                        <div class="panel wallet-widgets">
+                            <div class="panel-body">
+                                <ul class="side-icon-text">
+                                    <li class="m-0"></span><div class="di vm"><h3 class="m-t-0">Здравствуйте.</h3></div></li>
+									<br>
+                                    <li class="m-0"></span><div class="di vm"><h4> Этот проект был создан для учителей математики школы 298 или иных школ.</h4> </div></li>
+									<br>
+                                    <li class="m-0"></span><div class="di vm"><h4> Этот сайт поможет в будующем дать ученикам знания и поможет учителям с</h4></div></li>
+									<br>
+                                    <li class="m-0"></span><div class="di vm"><h4>проверкой домашнего задания. На этом сайте будут появляться задания для каждый из тем учебника по математике.</h4></div></li>
+									<br>                                    
+									<li class="m-0"></span><div class="di vm"><h4> Также будут появляться интересные темы во вкладке "Интересное". Надеюсь, это облегчит задачу учителям!</h4></div></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col-md-3 -->
+                </div>
+                <!-- /.row -->
+                <!-- ============================================================== -->
+                <!-- Profile, & inbox widgets -->
+                <!-- ============================================================== -->
+                <!-- .row -->
+                <div class="row">
+          
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- /.row -->
