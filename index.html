@@ -1,3 +1,9 @@
+<?php 
+    if (!empty($_COOKIE['sid'])) {session_id($_COOKIE['sid']);}
+    session_start();
+    require_once 'classes/Auth.class.php';
+    require_once 'stayt.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,6 +79,7 @@
                     </li>
                     <li><a href="gl/Contacts.html" class="waves-effect"><i class="fa fa-circle-o text-danger"></i> <span class="hide-menu">Контакты</span></a></li>
                     <li><a href="op.html" class="waves-effect"><i class="fa fa-circle-o text-success"></i> <span class="hide-menu">Описание проекта</span></a></li>
+                    <li><a href="registr.html" class="waves-effect"></i> <span class="hide-menu">Регистрация</span></a></li>
                 </ul>
             </div>
         </div>
@@ -185,6 +192,7 @@
     <script src="plugins/bower_components/toast-master/js/jquery.toast.js"></script>
     <!--Style Switcher -->
     <script src="plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+	<script src="jquery-2.0.3.min.js"></script><script src="ajax-form.js"></script>
 </body>
 
 </html>

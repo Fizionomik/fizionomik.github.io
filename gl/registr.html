@@ -1,0 +1,52 @@
+<?php 
+    if (!empty($_COOKIE['sid'])) {session_id($_COOKIE['sid']);}
+    session_start();
+    require_once 'classes/Auth.class.php';
+    require_once 'stayt.php';
+?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Регистрация на сайте</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    
+<h1>Регистрация на сайте</h1>
+<p class="zag">Оригинал скрипта предоставлен <a href="https://age-dragon.com/scripts/15-registraciya.html" target="_blank">Age-Dragon.com</a></p>
+
+<div class="my_left"><div class="my_left-2">
+
+<!-- Для авторизованных -->
+<?php if (Auth\User::isAuthorized()): ?>
+<?php header('Refresh: 0; url=http://my-domen.ru');?>
+
+<!-- Для НЕ авторизованных -->
+<?php else: ?>
+<br><br>
+<form class="form-signin ajax" method="post" action="ajax.php">
+<p class="ogl">Регистрация</p>
+<div class="main-error alert alert-error hide"></div>
+<input name="username" type="text" class="input-block-level" placeholder="Ваш E-mail" autofocus>
+<input name="names" type="text" class="input-block-level" placeholder="Ваше имя">
+<input name="password1" type="password" class="input-block-level" placeholder="Пароль">
+<input name="password2" type="password" class="input-block-level" placeholder="Повтор пароля">
+<input type="hidden" name="act" value="register">
+<input type="hidden" name="ips" value="<?php echo $_SERVER['REMOTE_ADDR'];?>">
+<input type="hidden" name="vremya" value="<?php echo $vremya=date('d-m-Y');?>">
+<input id="regsubmit" type="submit" value="Регистрация">
+</form>
+<p class="ogl"><a href="index.html">Войти</a></p>
+
+<!-- Конец условия -->
+<?php endif; ?>
+
+
+</div></div>
+
+<script src="jquery-2.0.3.min.js"></script><script src="ajax-form.js"></script>
+</body>
+</html>
