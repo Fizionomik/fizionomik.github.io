@@ -28,74 +28,49 @@
     <link href="gl/css/style.css" rel="stylesheet">
     <!-- color CSS -->
     <link href="gl/css/colors/blue-dark.css" id="theme" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
 </head>
 
 <body class="fix-header">
-    <!-- ============================================================== -->
-    <!-- Preloader -->
-    <!-- ============================================================== -->
-    <div class="preloader">
-        <svg class="circular" viewBox="25 25 50 50">
-            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
-        </svg>
-    </div>
     <div id="wrapper">
         <!-- ============================================================== -->
         <!-- ЛЕВАЯ ПАНЕЛЬ  -->
         <!-- ============================================================== -->
-        <div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav slimscrollsidebar">
-                <div class="sidebar-head">
-                    <h3><span class="fa-fw open-close"><i class="ti-menu hidden-xs"></i><i class="ti-close visible-xs"></i></span> <span class="hide-menu">Навигация</span></h3> </div>
-                <ul class="nav" id="side-menu">
-					<li> <a href="index.html" class="waves-effect">&#8855  <span class="hide-menu"> Главная </span></a>
-				    <li> <a href="gl/interes.html" class="waves-effect"> &#10084 <span class="hide-menu"> Интересное </span></a>
-					
-					
-					
-					
-					
-					</li>
-                    <li> <a href="#" class="waves-effect"><i class="mdi mdi-av-timer fa-fw" data-icon="v"></i> <span class="hide-menu"> Математика <span class="fa arrow"></span> <span class="label label-rouded label-inverse pull-right">5-9</span></span></a>
-                        <ul class="nav nav-second-level">
-                            <li> <a href="#"><i class=" fa-fw">1</i><span class="hide-menu">5 класс</span></a> </li>
-                            <li> <a href="#"><i class=" fa-fw">2</i><span class="hide-menu">6 класс</span></a> </li>
-                            <li> <a href="#"><i class=" fa-fw">3</i><span class="hide-menu">7 класс</span></a> </li>
-                            <li> <a href="#"><i class=" fa-fw">4</i><span class="hide-menu">8 класс</span></a> </li>
-                            <li> <a href="gl/9kl.html"><i class=" fa-fw">5</i><span class="hide-menu">9 класс</span></a> </li>
-                        </ul>
+       <nav class="navbar navbar-default m-b-0">
+            <div class="navbar-header">
+                <ul class="nav navbar-top-links navbar-left">
+                    <!-- .Task dropdown -->
+                    <!-- .Megamenu -->
+                    <li> <a href="#"><span class="hidden-xs">Главная</span> </a></li>
+                    <li> <a href="interes.html"><span class="hidden-xs">Интересное</span> </a></li>
+                    <li class="mega-dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><span class="hidden-xs">Математика</span> <i class="icon-options-vertical"></i></a>
+                        <ul class="dropdown-menu mega-dropdown-menu animated bounceInDown">
+                            <li class="col-sm-5">
+                                <ul>
+                                    <li class="dropdown-header">Математика 5 класс</li>
+                                    <li><a href="#">Задачи</a></li>
+                                </ul>
+                            </li>
+                              <li class="col-sm-1">
+                                <ul>
+                                    <li class="dropdown-header">Алгебра 9 класс</li>
+                                    <li><a href="9kl.html">Задачи</a></li>
+                                </ul>
+                            </li>
+							</ul>
+                        <li> <a href="gl/Contacts.html"><span class="hidden-xs">Контакты</span> </a></li>
+                      <li> <a href="gl/op.html"><span class="hidden-xs">Описание проекта</span> </a></li>
                     </li>
-                    <li><a href="gl/Contacts.html" class="waves-effect"><i class="fa fa-circle-o text-danger"></i> <span class="hide-menu">Контакты</span></a></li>
-                    <li><a href="gl/op.html" class="waves-effect"><i class="fa fa-circle-o text-success"></i> <span class="hide-menu">Описание проекта</span></a></li>
+                    <!-- /.Megamenu -->
                 </ul>
-            </div>
-        </div>
-        <!-- ============================================================== -->
-        <!-- End Left Sidebar -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Page Content -->
-        <!-- ============================================================== -->
-        <div id="page-wrapper">
+				</div>
+        </nav>
+        <div>
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
                         <h1 class="page-title">Главная Панель</h1>
                     </div>
-                    <!-- /.col-lg-12 -->
                 </div>
-                <!-- /.row -->
-                <!-- ============================================================== -->
-                <!-- Different data widgets -->
-                <!-- ============================================================== -->
-                    <!-- /col-md-9 -->
-                    <!-- col-md-3 -->
                     <div class="col-md-4 col-lg-3">
 												<div> <h1> Новости </h1> </div>
                         <div class="panel wallet-widgets">
@@ -120,40 +95,15 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- /col-md-3 -->
                 </div>
-                <!-- /.row -->
-                <!-- ============================================================== -->
-                <!-- Profile, & inbox widgets -->
-                <!-- ============================================================== -->
-                <!-- .row -->
                 <div class="row">
           
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-                <!-- ============================================================== -->
-                <!-- calendar & todo list widgets -->
-                <!-- ============================================================== -->
-                
-            </div>
-            <!-- /.container-fluid -->
             <footer class="footer text-center"> 2020 &copy; ГБОУ СОШ 298 </footer>
-        </div>
-        <!-- ============================================================== -->
-        <!-- End Page Content -->
-        <!-- ============================================================== -->
     </div>
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
     <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="gl/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -174,8 +124,6 @@
     <script src="plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
     <!-- Calendar JavaScript -->
     <script src="plugins/bower_components/moment/moment.js"></script>
-    <script src='plugins/bower_components/calendar/dist/fullcalendar.min.js'></script>
-    <script src="plugins/bower_components/calendar/dist/cal-init.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="gl/js/custom.min.js"></script>
     <!-- Custom tab JavaScript -->
