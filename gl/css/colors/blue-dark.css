@@ -19,7 +19,7 @@
 }
 /*Just change your choise color here its theme Colors*/
 body {
-  background: #2f323e;
+  	background: url(bg.png); /* Фоновый цвет и фоновый рисунок*/
 }
 /*Top Header Part*/
 .logo i {
